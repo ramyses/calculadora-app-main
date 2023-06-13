@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -12,10 +12,74 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .teclado ul li button { width: 100px; height: 30px }
+    
+    .teclado {
+      width: 600px;
+      height: 100vh;
+      background-color: grey;
+      margin: 0 auto;
+      
+    }
+    
+    .teclado ul {
+      background-color: blue;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      
+    }
+
+    .teclado li {
+      list-style: none;
+    }
+
+    .teclado button {
+      background-color: darkblue;
+      color: white;
+      border-radius: 15px;
+      font-size: 2em;
+      font-weight: bold;
+      width: 40px;
+    }
+/*Por que não consigo estilizar esse 2 botões?*/
+    .reset, .igualdade {
+      background-color: darklue;
+      color: red;
+      width:;
+    }
   </style>
 </head>
 <body>
-  <div></div>
+<section class="teclado">
+  <ul  class="teclas">
+    <li><button>7</button></li>
+    <li><button>8</button></li>
+    <li><button>9</button></li>
+    <li><button>dell</button></li>
+    <li><button>4</button></li>
+    <li><button>5</button></li>
+    <li><button>6</button></li>
+    <li><button>+</button></li>
+    <li><button>1</button></li>
+    <li><button>2</button></li>
+    <li><button>3</button></li>
+    <li><button>-</button></li>
+    <li><button>.</button></li>
+    <li><button>0</button></li>
+    <li><button>/</button></li>
+    <li><button>x</button></li>
+  </ul>
+  <ul>
+    <li><button class="reset">reset</button></li>
+    <li><button class="igualdade">=</button></li>
+  </ul>
+
+ 
+
+</section>
 
 
   
