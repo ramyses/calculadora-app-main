@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    background: black;
+}
+
+.teclado {
+    background-color:red ;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.teclado ul {
+    background-color:blue;
+    width: 800px;
+    margin: 0 auto;
+    margin-top:200px ;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.teclado li{
+    background-color: green;
+    width: 20%;
+    margin: 2%;
+    text-align: center;
+}
+
+.teclado button {
+    background-color:yellow ;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 32px;
+}
+
+.reset  {
+    background-color: grey;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.teclado ul li button {
+    width: 100px; height: 30px
+}

@@ -2,55 +2,13 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/teclas.css">
   
   <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .teclado ul li button { width: 100px; height: 30px }
-    
-    .teclado {
-      width: 600px;
-      height: 100vh;
-      background-color: grey;
-      margin: 0 auto;
-      
-    }
-    
-    .teclado ul {
-      background-color: blue;
-      width: 80%;
-      margin: 0 auto;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      
-    }
-
-    .teclado li {
-      list-style: none;
-    }
-
-    .teclado button {
-      background-color: darkblue;
-      color: white;
-      border-radius: 15px;
-      font-size: 2em;
-      font-weight: bold;
-      width: 40px;
-    }
-/*Por que não consigo estilizar esse 2 botões?*/
-    .reset, .igualdade {
-      background-color: darklue;
-      color: red;
-      width:;
-    }
-  </style>
 </head>
 <body>
 <section class="teclado">
@@ -71,20 +29,11 @@
     <li><button>0</button></li>
     <li><button>/</button></li>
     <li><button>x</button></li>
-  </ul>
-  <ul>
     <li><button class="reset">reset</button></li>
     <li><button class="igualdade">=</button></li>
   </ul>
-
- 
-
 </section>
-
-
-  
   <div class="attribution">
-    ,
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
