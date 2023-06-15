@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ### Theme 1
 
-#### Backgrounds
+#### 
 
 - Very dark desaturated blue (main background): hsl(222, 26%, 31%)
 - Very dark desaturated blue (toggle background, keypad background): hsl(223, 31%, 20%)
@@ -26,7 +26,7 @@ The designs were created to the following widths:
 - Dark red (key shadow): hsl(6, 70%, 34%)
 
 - Light grayish orange (key background): hsl(30, 25%, 89%)
-- Grayish orange (key shadow): hsl(28, 16%, 65%)
+- Grayish orange (key shadow): 
 
 #### Text
 
