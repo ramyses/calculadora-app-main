@@ -1,41 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
 
-.teclado {
-    width: 100%;
-    background-color: white;
-}
+
 .container {
-    width:50vw ;
-    background-color: red;
-    margin: 0 auto;
-    padding: 10px;
     display: flex;
     border-radius: 8px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
+.teclado{
+    margin-top: 30px;
+    width: 100%;
+}
 .teclado ul {
-    background-color:blue;
-    width: 48vw;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    background-color:var( --screen-brackground);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    width: 100%;
     height: 500px;
     border-radius: 10px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .teclado li{
-    width: 20%;
-    height: 13%;
-    margin: 2%;
+    color: var(--grayish-orange);
     border: none;
     border-radius: 10px;
+    margin: 10px;
+    transition: transform 00ms;
 }
 
 .teclado li:active {
@@ -43,23 +35,37 @@
 }
 
 .teclado li:hover {
-    scale: .8;   
+   transform:  scale(.9);
+   background-color: var(--Light-grayish-orange);
 }
 
 
 .teclado .tecla {
-    background-color:darkblue;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     font-size: 32px;
+    font-weight: bold;
+    color: var(--Desaturated-dark-blue2);
+}
+
+.teclado .reset{
+    grid-column: span 2;
+
+}
+.teclado .reset button,
+.teclado .del button{
+    background-color: var(--Desaturated-dark-blue);
     color: white;
 }
-
-.teclado tecla {
-    background-color: grey;
+.teclado .result{
+    grid-column: span 2;
+    
 }
-
+.teclado .result button{
+    background-color: var( --red);
+    color: white;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
