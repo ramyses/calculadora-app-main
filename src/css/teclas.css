@@ -46,7 +46,8 @@
     border-radius: 10px;
     font-size: 32px;
     font-weight: bold;
-    color: var(--Desaturated-dark-blue2);
+    color: var(--text);
+    background-color: var(--background-buttons);
 }
 
 .teclado .reset{
@@ -55,16 +56,17 @@
 }
 .teclado .reset button,
 .teclado .del button{
-    background-color: var(--Desaturated-dark-blue);
+    background-color: var(--buttons-reset-del);
     color: white;
+    text-transform: uppercase;
 }
 .teclado .result{
     grid-column: span 2;
     
 }
 .teclado .result button{
-    background-color: var( --red);
-    color: white;
+    background-color: var(--button-result);
+    color: var(--result);
 }
 .attribution {
     font-size: 11px;

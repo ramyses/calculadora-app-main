@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="src/css/teclas.css">
   <title>Frontend Mentor | Calculator app</title>
 </head>
-<body>
+<body class="theme">
   <header>
       
   </header>
@@ -22,7 +22,12 @@
       <div>
         <h1>Calc</h1>
           <div>
-            <label for="">theme</label>        
+            <label for="">theme</label>  
+            <select name="" id="">
+              <option class="-active" value="1">1</option>
+              <option class="" value="2">2</option>
+              <option class="" value="3">3</option>
+            </select>      
           </div>
       </div>      
       <input class="result" type="text">
@@ -33,7 +38,7 @@
           <li><button class="tecla">7</button></li>
           <li><button class="tecla">8</button></li>
           <li><button class="tecla">9</button></li>
-          <li class=" del"><button class="tecla">dell</button></li>
+          <li class=" del"><button class="tecla">del</button></li>
           <li><button class="tecla">4</button></li>
           <li><button class="tecla">5</button></li>
           <li><button class="tecla">6</button></li>
@@ -58,5 +63,7 @@
       Coded by <a href="#">Ellielton and lukas</a>.
       </div>
   </footer>
+
+  <script src="src/js/themes.js"></script>
 </body>
 </html>
