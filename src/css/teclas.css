@@ -1,0 +1,77 @@
+
+
+.container {
+    display: flex;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.teclado{
+    margin-top: 30px;
+    width: 100%;
+}
+.teclado ul {
+    background-color:var( --screen-brackground);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5, 20%);
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.teclado li{
+    color: var(--grayish-orange);
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 00ms;
+}
+
+.teclado li:active {
+    box-shadow: 0px 0px 20px 8px lightblue;    
+}
+
+.teclado li:hover {
+   transform:  scale(.9);
+   background-color: var(--Light-grayish-orange);
+}
+
+
+.teclado .tecla {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--text);
+    background-color: var(--background-buttons);
+}
+
+.teclado .reset{
+    grid-column: span 2;
+
+}
+.teclado .reset button,
+.teclado .del button{
+    background-color: var(--buttons-reset-del);
+    color: white;
+    text-transform: uppercase;
+}
+.teclado .result{
+    grid-column: span 2;
+    
+}
+.teclado .result button{
+    background-color: var(--button-result);
+    color: var(--result);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

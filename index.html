@@ -2,102 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="src/style.css">
-  <link rel="stylesheet" href="src/styles/colors.css">
+  <link rel="stylesheet" href="css/teclas.css">
+  
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/colors.css">
+  <link rel="stylesheet" href="src/css/teclas.css">
   <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .teclado ul li button { width: 100px; height: 30px }
-    
-    .teclado {
-      width: 600px;
-      height: 100vh;
-      background-color: grey;
-      margin: 0 auto;
-      
-    }
-    
-    .teclado ul {
-      background-color: blue;
-      width: 80%;
-      margin: 0 auto;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      
-    }
-
-    .teclado li {
-      list-style: none;
-    }
-
-    .teclado button {
-      background-color: darkblue;
-      color: white;
-      border-radius: 15px;
-      font-size: 2em;
-      font-weight: bold;
-      width: 40px;
-    }
-/*Por que não consigo estilizar esse 2 botões?*/
-    .reset, .igualdade {
-      background-color: darklue;
-      color: red;
-      width:;
-    }
-  </style>
 </head>
-<body>
-<section class="teclado">
-  <ul  class="teclas">
-    <li><button>7</button></li>
-    <li><button>8</button></li>
-    <li><button>9</button></li>
-    <li><button>dell</button></li>
-    <li><button>4</button></li>
-    <li><button>5</button></li>
-    <li><button>6</button></li>
-    <li><button>+</button></li>
-    <li><button>1</button></li>
-    <li><button>2</button></li>
-    <li><button>3</button></li>
-    <li><button>-</button></li>
-    <li><button>.</button></li>
-    <li><button>0</button></li>
-    <li><button>/</button></li>
-    <li><button>x</button></li>
-  </ul>
-  <ul>
-    <li><button class="reset">reset</button></li>
-    <li><button class="igualdade">=</button></li>
-  </ul>
-
- 
-
-</section>
+<body class="theme">
+  <header>
+      
+  </header>
+  <main>
     <section class="header">
       <div>
         <h1>Calc</h1>
-        <div>
-          <label for="">theme</label>
-          
-        </div>
-      </div>
-      
+          <div>
+            <label for="">theme</label>  
+            <select name="" id="">
+              <option class="-active" value="1">1</option>
+              <option class="" value="2">2</option>
+              <option class="" value="3">3</option>
+            </select>      
+          </div>
+      </div>      
       <input class="result" type="text">
     </section>
+    <section class="teclado">
+      <div class="container">
+        <ul  class="teclas">
+          <li><button class="tecla">7</button></li>
+          <li><button class="tecla">8</button></li>
+          <li><button class="tecla">9</button></li>
+          <li class=" del"><button class="tecla">del</button></li>
+          <li><button class="tecla">4</button></li>
+          <li><button class="tecla">5</button></li>
+          <li><button class="tecla">6</button></li>
+          <li><button class="tecla">+</button></li>
+          <li><button class="tecla">1</button></li>
+          <li><button class="tecla">2</button></li>
+          <li><button class="tecla">3</button></li>
+          <li><button class="tecla">-</button></li>
+          <li><button class="tecla">.</button></li>
+          <li><button class="tecla">0</button></li>
+          <li><button class="tecla">/</button></li>
+          <li><button class="tecla">x</button></li>
+          <li class="reset"><button class="tecla ">reset</button></li>
+          <li class="result"><button class="tecla ">=</button></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ellielton and lukas</a>.
+      </div>
+  </footer>
 
-
-  <div class="attribution">
-    ,
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ellielton and lukas</a>.
-  </div>
+  <script src="src/js/themes.js"></script>
 </body>
 </html>
